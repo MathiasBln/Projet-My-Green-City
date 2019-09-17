@@ -278,3 +278,219 @@ hr {
         justify-content: center;
     }
 }
+
+/*Partie gestion des déchets*/
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.titreconseils {
+  padding-bottom: 50px;
+}
+
+.containerconseil {
+
+  padding-bottom: 40px;
+  padding-top: 40px;
+        background: 
+      linear-gradient(rgba(141,153,174,0.8),rgba(141,153,174,0)), 
+      url(https://images.unsplash.com/photo-1526951521990-620dc14c214b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    font-size:20px
+}
+
+
+.conteneur{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+   margin-bottom: 100px;
+}
+
+.titrecollecte {
+  padding-bottom: 50px;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+details {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+  width: 100%;
+  background-color: white;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+.cotegauche{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 30%;
+}
+
+.pointsdecollecte {
+  padding-top: 40px;
+}
+
+.imagecentre {
+  display: flex;
+  width: 40%;
+  height: 20%;
+}
+              
+
+            /*Gestion des déchets, partie mobile CSS*/
+
+
+@media only screen and (max-width: 961px){
+
+
+  .conteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cotegauche {
+    display: flex;
+  justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  
+  .imagecentre {
+    display: flex;
+  justify-content: center; 
+    width: 90%;
+  }
+}
+
+/*Footer - Lionel*/
+
+
+.contact{
+  text-align:center;
+  font-size:34px;
+  text-transform:uppercase;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:5px;
+  text-transform:uppercase;
+}
+
+form input{
+  height:25px;
+}
+
+form input, textarea{
+  border:1px solid black;
+  border-radius:8px;
+  margin-bottom:0.7rem;
+  width:50%;
+}
+
+.submit{
+  justify-content:center;
+  background-color:#A9A9A9;
+  color:black;
+  font-size:1rem;
+  padding:0.1rem;
+  border:0,1rem solid black;
+  width:5rem;
+}
+
+.titre_formulaire{
+  font-size:18px;
+}
+
+footer{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:#A9A9A9;
+  height:21vh;
+}
+
+footer div{
+  display:flex;
+  flex-direction:column;
+}
+
+.footer1{
+  align-items:flex-start;
+  flex-wrap:wrap;
+  margin-top:15px;
+  width:70%;
+  height:15vh;
+}
+
+.footer1 a{
+  color:white;
+  text-decoration:none;
+}
+
+.footer1 a:hover{
+  text-decoration:underline;
+}
+
+.footer2{
+  display:flex;
+  flex-direction:row;
+  align-items:flex-end;
+  justify-content:space-around;
+  align-content:center;
+  width:100%;
+  margin-top:15px;
+}
+
+.footer2 a{
+  color:white;
+  text-decoration:none;
+}
+
+.footer2 a:hover{
+  text-decoration:underline;
+}
+
+h3{
+  text-align:center;
+}
+
+.logo{
+  border-radius:50%;
+  height:40px;
+}
+
+@media (max-width:961px){
+  footer{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+  }

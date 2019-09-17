@@ -1,8 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('fonts/Bellota-Regular-webfont.eot');
+    src: url('fonts/Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Bellota-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Bellota-Regular-webfont.woff') format('woff'),
+         url('fonts/Bellota-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+* {
+    font: 1em "bellotaregular", sans-serif;
+}
+
+/* ----Partie Nav ----*/
 
 nav
 {
@@ -130,4 +144,137 @@ text-decoration:none;
   color: rgb(59, 59, 58);
 }
 }
-/*Code CSS Navbar*/
+/*----Partie Actions et Associations----*/
+
+.actions img, .assos img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 10px solid whitesmoke;
+}
+
+.title-actions {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0px;
+    height: 180px;
+    padding: 40px;
+    text-align: center;
+    font-size: 4em;
+    background-color: white;
+    color: #73be31;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+}
+
+.actions {
+    background-image: url("https://i.postimg.cc/ZqnDCBcW/lou-levit-0l-HIMPh-Rt-N8-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.actions h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    width: 350px;
+    background-color: #73be31;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+}
+
+.title-assos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0px;
+    height: 180px;
+    padding: 40px;
+    text-align: center;
+    font-size: 4em;
+    background-color: white;
+    color: #73be31;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+}
+
+hr {
+    display:none;
+}
+
+.assos {
+    background-image: url("https://i.postimg.cc/ZqnDCBcW/lou-levit-0l-HIMPh-Rt-N8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.assos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.assos h2 {
+    font-size: 2em;
+    text-align: center;
+    width: 350px;
+    background-color: #73be31;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+}
+
+@media (min-width:1017px) {
+    .actions div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:1017px) {
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+    }
+    .actions img {
+        height: 300px;
+        width: 300px;   
+    }
+
+    .actions h2 {
+        width: 100px;
+        font-size: 1em;
+    }
+    
+    .action1 {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .action2 {
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .action3 {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

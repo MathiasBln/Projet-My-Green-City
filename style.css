@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav
+{
+  background-color: rgb(59, 59, 58);
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+}
+
+nav a
+{
+  padding: 20px;
+  color: rgb(218, 218, 218);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+a:link
+{
+text-decoration:none;
+}
+
+.logo_navbar
+{
+  width: 65px;
+  height: 71px;
+}
+
+.links
+{
+  display: flex;
+  align-items: center;
+}
+
+.links :hover
+{
+  color: #000;
+  background-color: #D3D3D3;
+}
+
+.burger, .close 
+{
+  display: none;
+}
+
+.image_1 
+{
+  width : 100vw;
+  height: 400px;
+}
+
+div .carousel p
+{
+  height: 200px;
+}
+
+.carousel p
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: top; 
+  font-weight:bold;
+  height: 100px;
+}
+
+.carousel
+{
+  background-image: url("https://i.postimg.cc/Hs0wWfBN/Orle-ans-Loire.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 372px) and (max-width: 812px) {
+  .logo_navbar
+{
+display: none;
+}
+  
+  a:link
+{
+text-decoration:none;
+}
+  
+  .burger, .close 
+  {
+      display: block;
+  }
+  
+  .close
+  {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  
+  .links 
+  {
+    display: none;
+  }
+  
+  .links:target 
+  {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(59, 59, 58);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    padding: 10vw;
+  }
+  
+.carousel
+{
+  background-color: rgb(59, 59, 58);
+}
+
+.carousel p
+{
+  color: rgb(59, 59, 58);
+}
+}
+/*Code CSS Navbar*/

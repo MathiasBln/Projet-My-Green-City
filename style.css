@@ -16,6 +16,10 @@
     font: 1em "bellotaregular", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ----Partie Nav ----*/
 
 nav

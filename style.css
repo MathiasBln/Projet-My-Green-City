@@ -31,7 +31,7 @@ nav a
 {
   padding: 20px;
   color: rgb(218, 218, 218);
-  font-size: 25px;
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -74,23 +74,13 @@ div .carousel p
   height: 200px;
 }
 
-.carousel p
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  text-align: top; 
-  font-weight:bold;
-  height: 100px;
-}
-
 .carousel
 {
   background-image: url("https://i.postimg.cc/Hs0wWfBN/Orle-ans-Loire.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
+  width: 100vw;
 }
 
 /* Mobile Styles */
@@ -137,11 +127,6 @@ text-decoration:none;
 .carousel
 {
   background-color: rgb(59, 59, 58);
-}
-
-.carousel p
-{
-  color: rgb(59, 59, 58);
 }
 }
 /*----Partie Actions et Associations----*/

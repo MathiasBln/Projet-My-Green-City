@@ -141,139 +141,150 @@ text-decoration:none;
   }
   
 }
+
 /*----Partie Actions et Associations----*/
 
 .actions img, .assos img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: 10px solid whitesmoke;
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  border-radius: 50%;
+  border: 10px solid whitesmoke;
+}
+
+.actions img:hover, .assos img:hover {
+  opacity: 0.9;
+  transition-duration: 200ms;
+  border: 10px solid #73be31;
 }
 
 .title-actions {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0px;
-    height: 180px;
-    padding: 40px;
-    text-align: center;
-    font-size: 4em;
-    background-color: white;
-    color: #73be31;
-    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0px;
+  height: 160px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 4vh;
+  background-color: white;
+  color: #73be31;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
 }
 
 .actions {
-    background-image: url("https://i.postimg.cc/ZqnDCBcW/lou-levit-0l-HIMPh-Rt-N8-unsplash.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  background-image: url("https://i.postimg.cc/jdmfRLpK/jez-timms-l8xc8t-XJ8-E-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .actions h2 {
-    font-size: 2em;
-    text-align: center;
-    padding: 10px;
-    margin: 30px;
-    width: 350px;
-    background-color: #73be31;
-    color: white;
-    border-radius: 5px;
-    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
-}
-
-.title-assos {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0px;
-    height: 180px;
-    padding: 40px;
-    text-align: center;
-    font-size: 4em;
-    background-color: white;
-    color: #73be31;
-    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+  font-size: 1.6vh;
+  text-align: center;
+  width: 250px;
+  background-color: #73be31;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
 }
 
 hr {
-    display:none;
+  display:none;
+}
+
+.title-assos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0px;
+  height: 160px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 4vh;
+  background-color: white;
+  color: #73be31;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
 }
 
 .assos {
-    background-image: url("https://i.postimg.cc/ZqnDCBcW/lou-levit-0l-HIMPh-Rt-N8-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.assos div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
+  background-image: url("https://i.postimg.cc/jdmfRLpK/jez-timms-l8xc8t-XJ8-E-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .assos h2 {
-    font-size: 2em;
-    text-align: center;
-    width: 350px;
-    background-color: #73be31;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+  font-size: 1.6vh;
+  text-align: center;
+  width: 250px;
+  background-color: #73be31;
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
 }
 
-@media (min-width:1017px) {
-    .actions div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        padding: 20px;
-    }
+@media (min-width:1126px) {
+  .actions div, .assos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+    padding: 0px;
+  }
 }
 
 
-@media (max-width:1017px) {
+@media (max-width:1126px) and (min-width: 626px) {
 
-    .actions {
-        display: flex;
-        flex-direction: column;
-    }
-    .actions img {
-        height: 300px;
-        width: 300px;   
-    }
+  .title-actions, .title-assos {
+    font-size: 3vh;
+    height: 140px;
+  }
 
-    .actions h2 {
-        width: 100px;
-        font-size: 1em;
-    }
-    
-    .action1 {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  .actions, .assos {
+    display: flex;
+    flex-direction: column;
+  }
+  .actions img, .assos img {
+    height: 280px;;
+    width: 280px;  
+    margin: 50px 0px 30px 0px;
+  }
 
-    .action2 {
-        display:flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-    }
+  .actions h2, .assos h2 {
+    width: 35%;
+    font-size: 1.5vh;
+  }
+  
+.actions div, .assos div {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-    .action3 {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  .action1, .asso1 {
+    display:flex;
+    flex-direction: row;  
+  }
+
+  .action2, .asso2 {
+    display:flex;
+    flex-direction: row-reverse;  
+  }
+
+  .action3, .asso3 {
+    display:flex;
+    flex-direction: row;
+  }
 }
 
 /*Partie gestion des déchets*/

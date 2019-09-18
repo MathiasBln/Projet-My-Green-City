@@ -286,7 +286,6 @@ hr {
   color: #73be31;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   font-size: 34px;
-  text-transform:uppercase;
   text-align: center;
 }
 
@@ -295,7 +294,6 @@ hr {
   color: #73be31;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   font-size: 4em;
-  text-transform:uppercase;
   text-align: center;
   padding-top: 50px;
 }
@@ -340,12 +338,10 @@ hr {
 }
 
 .titrecollecte {
-  padding-bottom: 50px;
-  padding-top: 40px;
-  font-size: 34px;
-  text-transform:uppercase;
+  padding-bottom: 30px;
   color: #73be31;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+  font-size: 34px;
   text-align: center;
 }
 

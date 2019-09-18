@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('fonts/Bellota-Regular-webfont.eot');
+    src: url('fonts/Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Bellota-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Bellota-Regular-webfont.woff') format('woff'),
+         url('fonts/Bellota-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    font: 1em "bellotaregular", sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+/*----------------------début nav */
+
+nav
+{
+  background-color: rgb(59, 59, 58);
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+}
+
+nav a
+{
+  padding: 20px;
+  color: rgb(218, 218, 218);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+a:link
+{
+text-decoration:none;
+}
+
+.logo_eco
+{
+  width: 65px;
+  height: 71px;
+}
+
+.links
+{
+  display: flex;
+  align-items: center;
+}
+
+.links :hover
+{
+  color: #000;
+  background-color: #D3D3D3;
+}
+
+.burger, .close 
+{
+  display: none;
+}
+
+.image_1 
+{
+  width : 100vw;
+  height: 400px;
+}
+
+/*-------------------fin nav*/
+/*-------------------------------début asso*/
+  
+
+
+.LNE_titre, .FNE_titre, .ZDO_titre{
+    display: flex;
+    justify-content:center;
+    padding-bottom:3%;
+    font-size: 40px;
+    padding-top:2%;
+    font-size: 3em;
+    color: #73be31;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+    
+}
+
+.fond1{
+    background-image: url("https://i.postimg.cc/25g6QdQg/nahil-naseer-xljt-GZ2-P3-Y-unsplash.jpg");
+    height: 320px;
+    padding-left:150px;
+}
+.fond2{
+    background-image: url("https://i.postimg.cc/3x17rXf2/izuddin-helmi-adnan-8-VJDHw3da-Gk-unsplash.jpg");
+    height: 320px;
+    padding-left:150px;
+}
+
+.fond3{
+    background-image: url("https://i.postimg.cc/wT0H2KmK/maksim-shutov-YZm-Lk-Ug-EI-unsplash.jpg");
+    height: 320px;
+    padding-left:150px;
+}
+
+.LNE_info, .FNE_info, .ZDO_info{
+    display:flex;
+    justify-content:center;
+    font-size: 35px;
+    padding-bottom: 2%;
+    font-style: italic;
+    padding-right: 130px;
+    color:white;
+}
+
+.information{
+    display: flex;
+    height:20vh;
+    flex-direction:row;
+}
+
+.LNE_gauche{
+    background-color:#31572c;
+    opacity:0.75;
+    border-radius: 15px;
+    display:flex;
+    width:30%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height:110%;
+    font-size:20px;
+;}
+
+.FNE_gauche{
+    background-color:#ad0d27;
+    opacity:0.75;
+    border-radius: 15px;
+    display:flex;
+    width:30%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height:125%;
+    font-size:20px;
+}
+
+.ZDO_gauche{
+    background-color:#81712b;
+    opacity:0.75;
+    border-radius: 15px;
+    display:flex;
+    width:30%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height:110%;
+    font-size:20px;
+}
+
+.LNE_text, .LNE_web, .FNE_text, .FNE_web, .ZDO_text, .ZDO_web, .ZDO_fb{
+    padding-top:6px;
+    width:100%;
+    font-size: 20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.LNE_droite, .FNE_droite, .ZDO_droite{
+    display:flex;
+    width:60%;
+    justify-content:flex-end;
+    align-items:center;
+    height:100%;
+}
+
+.FNE_logo, .ZDO_logo, .LNE_logo{
+    width:220px;
+    height:120%;
+    border-radius: 50%;
+}
+
+.LNE_fond, .FNE_fond, .ZDO_fond{
+    background-color:#FAF0E6;
+    height:100%;
+    width:100%;
+}
+
+.LNE_des, .FNE_des, .ZDO_des{
+    display:flex;
+    justify-content:center;
+    font-size: 35px;
+    padding-bottom: 2%;
+    font-style: italic;
+    padding-top: 3%;
+}
+
+.description{
+    display: flex;
+}
+
+.LNE_text2, .FNE_text2, .ZDO_text2{
+    width:95%;
+    font-size:20px;
+    padding-right:15px;
+    padding-left:2%;
+    padding-bottom:2%;
+
+}
+
+/*---------------fin asso*/
+
+/*----------------------début footer*/
+
+footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#A9A9A9;
+    height:20vh;
+}
+
+footer div{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer1{
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-top:15px;
+    width:90%;
+    height:13vh;
+}
+
+.footer1 a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer1 a:hover{
+    text-decoration:underline;
+}
+
+.footer2{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+    justify-content:space-around;
+    align-content:center;
+    width:100%;
+    margin-top:15px;
+}
+
+.footer2 a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer2 a:hover{
+    text-decoration:underline;
+}
+
+h3{
+    text-align:center;
+}
+
+.logo{   
+    padding-bottom: 50%;
+    border-radius:50%;
+    height:40px;
+ 
+}
+
+
+
+/*-----------------fin footer*/
+/*------------------Mobile Styles */
+@media screen and (max-width: 961px) {
+
+/*-----------------NAV*/
+    .logo
+  {
+    display: none;
+  }
+    
+    a:link
+  {
+    text-decoration:none;
+  }
+    
+    .burger, .close 
+    {
+        display: block;
+    }
+    
+    .close
+    {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+    
+    .links 
+    {
+      display: none;
+    }
+    
+    .links:target 
+    {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgb(59, 59, 58);
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      padding: 10vw;
+    }
+
+/*-----------------ASSO*/
+    .fond1, .fond2, .fond3{
+        padding-left:50px;
+    }
+
+    .LNE_gauche, .FNE_gauche, .ZDO_gauche{
+        width:300px;
+        height: 220px;
+    }
+
+    .ZDO_droite{
+        width:50%;
+    }
+
+    .LNE_info, .FNE_info, .ZDO_info{
+        padding-right: 45px;
+    }
+    
+    .description{
+        display: block;
+    }
+
+
+/*-----------------FOOTER*/
+.logo{   
+    display:flex;
+ 
+}
+
+}

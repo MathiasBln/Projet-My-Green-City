@@ -27,7 +27,7 @@ html {
 
 .navbar
 {
-  background-color: #A9A9A9;
+  background-color: #808080;
   display: flex;
   align-items: center;
   width: 100vw;
@@ -93,6 +93,8 @@ text-decoration:none;
 h1
 {
   margin: 0;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* Mobile Styles */
@@ -131,17 +133,13 @@ text-decoration:none;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    background-color: #A9A9A9;
+    background-color: #808080;
     width: 100vw;
     height: 100vh;
     top: 0;
     padding-top: 60px;
   }
   
-.carousel
-{
-  background-color: rgb(59, 59, 58);
-}
 }
 /*----Partie Actions et Associations----*/
 
@@ -482,7 +480,7 @@ footer{
   display:flex;
   flex-direction:column;
   align-items:center;
-  background-color:#A9A9A9;
+  background-color:#808080;
   height:23vh;
   margin-right:10%;
   margin-left:10%;

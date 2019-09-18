@@ -27,7 +27,7 @@ html {
 
 .navbar
 {
-  background-color: rgb(60,179,113);
+  background-color: #A9A9A9;
   display: flex;
   align-items: center;
   width: 100vw;
@@ -71,28 +71,32 @@ text-decoration:none;
   display: none;
 }
 
-.image_1 
-{
-  width : 100vw;
-  height: 400px;
-}
-
-div .carousel p
-{
-  height: 200px;
-}
-
 .carousel
 {
-  background-image: url("https://i.postimg.cc/Hs0wWfBN/Orle-ans-Loire.jpg");
+  background-image: radial-gradient(white 5%,transparent 70%), url("https://i.postimg.cc/Hs0wWfBN/Orle-ans-Loire.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
   width: 100vw;
 }
 
+.carousel h1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  height: 400px;
+  color: green;
+}
+
+h1
+{
+  margin: 0;
+}
+
 /* Mobile Styles */
-@media screen and (min-width: 372px) and (max-width: 812px) {
+@media screen and (max-width: 961px) {
   .logo_navbar
 {
 display: none;
@@ -125,12 +129,13 @@ text-decoration:none;
   {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: fixed;
-    background-color: rgb(59, 59, 58);
+    background-color: #A9A9A9;
     width: 100vw;
     height: 100vh;
     top: 0;
-    padding: 10vw;
+    padding-top: 60px;
   }
   
 .carousel

@@ -419,9 +419,14 @@ details[open] summary {
 
 
 .contact{
-  text-align:center;
-  font-size:34px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   text-transform:uppercase;
+  text-align: center;
+  font-size: 4em;
+  color: #73be31;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
 }
 
 form{
@@ -433,7 +438,11 @@ form{
 }
 
 form input{
-  height:25px;
+  height:30px;
+}
+
+form label{
+  margin-bottom:5px;
 }
 
 form input, textarea{
@@ -441,6 +450,7 @@ form input, textarea{
   border-radius:8px;
   margin-bottom:0.7rem;
   width:50%;
+  padding-left:10px;
 }
 
 .submit{
@@ -450,8 +460,9 @@ form input, textarea{
   font-size:1rem;
   padding:0.1rem;
   border:0,1rem solid black;
-  width:5rem;
-  height:3vh;
+  width:7rem;
+  height:28px;
+  border-radius:20px;
 }
 
 .titre_formulaire{
@@ -462,10 +473,11 @@ footer{
   display:flex;
   flex-direction:column;
   align-items:center;
-  background-color:rgb(60,179,113);
+  background-color:#A9A9A9;
   height:23vh;
-  margin-right:5%;
-  margin-left:5%;
+  margin-right:10%;
+  margin-left:10%;
+  margin-bottom:20px;
 }
 
 footer div{
@@ -478,13 +490,13 @@ footer div{
   flex-wrap:wrap;
   margin-top:15px;
   width:70%;
-  height:17vh;
+  height:16vh;
 }
 
 .footer1 a{
-  color:white;
+  color:#F5F5F5;
   text-decoration:none;
-  text-shadow: 1px 1px 1px white;
+  font-weight:bold;
   font-size:17px;
 }
 
@@ -500,23 +512,25 @@ footer div{
   align-content:center;
   width:100%;
   margin-top:15px;
+  height:35px;
 }
 
 .footer2 a{
-  color:white;
+  color:#F5F5F5;
   text-decoration:none;
   font-weight: bold;
-  font-size:17px;
+  font-size:18px;
 }
 
 .footer2 a:hover{
   text-decoration:underline;
 }
 
-h3{
+.titre_formulaire{
   text-align:center;
   font-weight:bold;
   text-decoration:underline;
+  text-shadow:0.5px 0.5px 0px black;
 }
 
 .logo{
@@ -524,9 +538,44 @@ h3{
   height:40px;
 }
 
-@media (max-width:961px){
+@media screen and (max-width:961px){
+
+  form input, textarea{
+    width:50%;
+    padding-left:12px;
+  }
+
+  .submit{
+    height:5vh;
+  }
+
   footer{
       display:flex;
       flex-direction:column;
       align-items:center;
+      width:100%;
+      height:25vh;
+  }
+
+  .footer1{
+    margin-left:-50%;
+    width:40%;
+  }
+
+  .footer1 a{
+    font-size:14px;
+  }
+
+  .footer2{
+    margin-left:-50%;
+    justify-content:space-between;
+  }
+
+  .titre_formulaire{
+    font-size:14px;
+  }
+
+  .footer1, .logo{
+    display:flex;
+    flex-direction:row;
   }

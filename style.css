@@ -379,6 +379,8 @@ summary {
     font-weight: bold;
     margin: -.5em -.5em 0;
     padding: .5em;
+    background-color: rgba(144, 238, 144, 0.719);
+    border-radius: 5px;
 }
 
 details[open] {

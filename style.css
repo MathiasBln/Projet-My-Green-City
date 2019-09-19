@@ -307,7 +307,7 @@ text-decoration:none;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   font-size: 4em;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 
@@ -380,17 +380,25 @@ summary {
     font-weight: bold;
     margin: -.5em -.5em 0;
     padding: .5em;
-    background-color: rgba(144, 238, 144, 0.719);
+    background-color: #73be31;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.295);
     border-radius: 5px;
+    color: white;
+    font-size: 1.6em;
 }
 
 details[open] {
     padding: .5em;
+    background-color: white;
+    color: #73be31;
+    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0);
+    font-size: 1.2em;
 }
 
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
+    color: white;
 }
 
 .cotegauche{

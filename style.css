@@ -30,7 +30,7 @@ html {
   background-color: #555;
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 70px;
 }
 
@@ -477,7 +477,7 @@ form{
 }
 
 form input{
-  height:30px;
+  height:35px;
 }
 
 form label{
@@ -486,22 +486,27 @@ form label{
 
 form input, textarea{
   border:1px solid black;
-  border-radius:8px;
+  border-radius:20px;
   margin-bottom:0.7rem;
   width:50%;
   padding-left:10px;
 }
 
 .submit{
+  background-color:#44c767;
+  border-radius:11px;
+  color:#ffffff;
+  text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
   justify-content:center;
-  background-color:#A9A9A9;
-  color:black;
-  font-size:1rem;
-  padding:0.1rem;
-  border:0,1rem solid black;
-  width:7rem;
-  height:28px;
-  border-radius:20px;
+  font-size:20px;
+  width:6.2rem;
+  height:31px;
+  cursor:pointer;
+}
+
+.submit:hover{
+  -webkit-box-shadow: 0px 0px 20px -2px #3dc21b;
 }
 
 .titre_formulaire{
@@ -509,112 +514,132 @@ form input, textarea{
 }
 
 footer{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  background-color:#808080;
-  height:23vh;
-  margin-right:10%;
-  margin-left:10%;
-  margin-bottom:20px;
+  background-color: #555;
+  color: #bbb;
+  line-height:1.5;
+  width:100%;
+  height:37vh;
 }
 
-footer div{
-  display:flex;
-  flex-direction:column;
+footer a{
+  text-decoration: none;
+  color: #eee;
 }
 
-.footer1{
-  align-items:flex-start;
-  flex-wrap:wrap;
-  margin-top:15px;
-  width:70%;
-  height:16vh;
-}
-
-.footer1 a{
-  color:#F5F5F5;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:17px;
-}
-
-.footer1 a:hover{
+a:hover{
   text-decoration:underline;
+}
+
+.partie_footer{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom:20px;
+    border-bottom:2px #777 solcid;
+}
+
+.texte_debut{
+  display:flex;
+  flex-flow:column;
+}
+
+.texte_debut a{
+  padding-top:5px;
+  font-size:18px;
+}
+
+.texte_milieu{
+    display:flex;
+    flex-flow:column;
+}
+
+.texte_milieu a{
+  padding-top:10px;
+  font-size:18px;
+}
+
+.texte_fin{
+    display:flex;
+    flex-flow:column;
+}
+
+.texte_fin a{
+  padding-top:10px;
 }
 
 .footer2{
   display:flex;
-  flex-direction:row;
-  align-items:flex-end;
-  justify-content:space-around;
-  align-content:center;
-  width:100%;
-  margin-top:15px;
-  height:35px;
+  justify-content:center;
+  padding-top:1,25rem;
 }
 
 .footer2 a{
-  color:#F5F5F5;
-  text-decoration:none;
-  font-weight: bold;
-  font-size:18px;
+  margin:0.9rem;
 }
 
-.footer2 a:hover{
-  text-decoration:underline;
+.footer3{
+
+  background-color:#333;
+  display:flex;
+  justify-content:space-around;
+}
+
+.footer3 a{
+  margin:0.125rem 0.625rem;
 }
 
 .titre_formulaire{
   text-align:center;
   font-weight:bold;
-  text-decoration:underline;
-  text-shadow:0.5px 0.5px 0px black;
+  font-size:20px;
+  color:white;
 }
 
 .logo{
   border-radius:50%;
-  height:40px;
+  height:43px;
+  padding-left:5px;
 }
 
 @media screen and (max-width:961px){
 
-  form input, textarea{
-    width:50%;
-    padding-left:12px;
-  }
-
-  .submit{
-    height:5vh;
-  }
-
   footer{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      width:100%;
-      height:25vh;
+    height:80vh;
   }
 
-  .footer1{
-    margin-left:-50%;
-    width:40%;
+  .partie_footer{
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .texte_debut{
+    align-items:center;
+    border-bottom:2px #777 solid;
+    padding-bottom:20px;
   }
 
-  .footer1 a{
-    font-size:14px;
+  .texte_milieu{
+    align-items:center;
+    border-bottom:2px #777 solid;
+    padding-bottom:20px;
+  }
+
+  .texte_fin{
+    align-items:center;
+  }
+
+  .texte_debut, .texte_milieu, .texte_fin{
+    font-size:20px;
   }
 
   .footer2{
-    margin-left:-50%;
-    justify-content:space-between;
+    border-top:2px #777 solid;
   }
 
-  .titre_formulaire{
-    font-size:14px;
+  .logo{
+    height:40px;
   }
 
-  .footer1, .logo{
-    display:flex;
-    flex-direction:row;
+  .footer4{
+    width:95%;
+    height:17%;;
   }

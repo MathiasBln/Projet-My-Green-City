@@ -18,21 +18,22 @@
 
 /*----------------------début nav */
 
-nav
+.navbar
 {
-  background-color: rgb(59, 59, 58);
+  background-color: #808080;
   display: flex;
   align-items: center;
   width: 100vw;
   height: 70px;
 }
 
-nav a
+.navbar a
 {
   padding: 20px;
   color: rgb(218, 218, 218);
-  font-size: 25px;
+  font-size: 22px;
   cursor: pointer;
+  font-weight:bold;
 }
 
 a:link
@@ -61,12 +62,6 @@ text-decoration:none;
 .burger, .close 
 {
   display: none;
-}
-
-.image_1 
-{
-  width : 100vw;
-  height: 400px;
 }
 
 /*-------------------fin nav*/
@@ -130,7 +125,7 @@ text-decoration:none;
     justify-content: center;
     height:110%;
     font-size:20px;
-;}
+}
 
 .FNE_gauche{
     background-color:#ad0d27;
@@ -141,7 +136,7 @@ text-decoration:none;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height:125%;
+    height:120%;
     font-size:20px;
 }
 
@@ -280,15 +275,15 @@ h3{
 @media screen and (max-width: 961px) {
 
 /*-----------------NAV*/
-    .logo
-  {
-    display: none;
-  }
+    .logo_eco
+    {
+        display: none;
+    }
     
     a:link
-  {
-    text-decoration:none;
-  }
+    {
+        text-decoration:none;
+    }
     
     .burger, .close 
     {
@@ -301,7 +296,7 @@ h3{
       top: 0;
       right: 20px;
     }
-    
+
     .links 
     {
       display: none;
@@ -316,36 +311,42 @@ h3{
       width: 100vw;
       height: 100vh;
       top: 0;
-      padding: 10vw;
+      padding-top:100px;
+      z-index:7;
     }
 
 /*-----------------ASSO*/
-    .fond1, .fond2, .fond3{
+    .fond1, .fond2, .fond3
+    {
         padding-left:50px;
     }
 
-    .LNE_gauche, .FNE_gauche, .ZDO_gauche{
+    .LNE_gauche, .FNE_gauche, .ZDO_gauche
+    {
         width:300px;
         height: 220px;
     }
 
-    .ZDO_droite{
+    .ZDO_droite
+    {
         width:50%;
     }
 
-    .LNE_info, .FNE_info, .ZDO_info{
+    .LNE_info, .FNE_info, .ZDO_info
+    {
         padding-right: 45px;
     }
     
-    .description{
+    .description
+    {
         display: block;
     }
 
 
 /*-----------------FOOTER*/
-.logo{   
+    .logo
+    {   
     display:flex;
- 
-}
+    }
 
 }

@@ -88,14 +88,15 @@ text-decoration:none;
   align-items: center;
   font-size: 100px;
   height: 400px;
+  font-weight: bold;
+  font-style: italic;
   color: green;
 }
 
-h1
+.titre_gen
 {
-  margin: 0;
-  font-weight: bold;
-  font-style: italic;
+  margin: 0px;
+
 }
 
 /* Mobile Styles */
@@ -105,6 +106,9 @@ h1
 display: none;
 }
 
+.carousel h1{
+    font-size: 4em;
+  }
 
   a:link
 {

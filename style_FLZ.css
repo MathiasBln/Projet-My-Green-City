@@ -1,38 +1,45 @@
 @font-face {
-    font-family: 'bellotaregular';
-    src: url('fonts/Bellota-Regular-webfont.eot');
-    src: url('fonts/Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Bellota-Regular-webfont.woff2') format('woff2'),
-         url('fonts/Bellota-Regular-webfont.woff') format('woff'),
-         url('fonts/Bellota-Regular-webfont.ttf') format('truetype'),
-         url('fonts/Bellota-Regular-webfont.svg#bellotaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'bellotaregular';
+  src: url('fonts/Bellota-Regular-webfont.eot');
+  src: url('fonts/Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bellota-Regular-webfont.woff2') format('woff2'),
+       url('fonts/Bellota-Regular-webfont.woff') format('woff'),
+       url('fonts/Bellota-Regular-webfont.ttf') format('truetype'),
+       url('fonts/Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 * {
-    font: 1em "bellotaregular", sans-serif;
-    margin: 0;
-    padding:0;
+  font: 1em "bellotaregular", sans-serif;
+  margin: 0;
+  padding:0;
 }
 
 /*----------------------début nav */
 .navbar
 {
-  background-color: #555;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 70px;
+background-color: #555;
+display: flex;
+align-items: center;
+width: 100vw;
+height: 70px;
+opacity:0.8;
+position: fixed;
+
 }
 
 .boutton, .close, .burger
 {
-  padding: 20px;
-  color: rgb(218, 218, 218);
-  font-size: 22px;
-  cursor: pointer;
-  font-weight:bold;
+padding: 20px;
+color: rgb(218, 218, 218);
+font-size: 22px;
+cursor: pointer;
+font-weight:bold;
+}
+
+.boutton_accueil{
+display:none;
 }
 
 a:link
@@ -42,170 +49,160 @@ text-decoration:none;
 
 .logo_eco
 {
-  width: 65px;
-  height: 71px;
+width: 65px;
+height: 71px;
 }
 
 .links
 {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .links :hover
 {
-  color: #000;
-  background-color: #D3D3D3;
+color: #000;
+background-color: #D3D3D3;
+text-decoration: none;
 }
 
 .burger, .close 
 {
-  display: none;
+display: none;
 }
 
 /*-------------------fin nav*/
 /*-------------------------------début asso*/
-  
+
 
 
 .LNE_titre, .FNE_titre, .ZDO_titre{
-    display: flex;
-    justify-content:center;
-    padding-bottom:3%;
-    font-size: 40px;
-    padding-top:2%;
-    font-size: 3em;
-    color: #73be31;
-    text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
-    
+  display: flex;
+  justify-content:center;
+  padding-bottom:1%;
+  font-size: 40px;
+  padding-top:125px;
+  font-size: 3em;
+  color: #73be31;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+  
 }
 
 .fond1{
-    background-image: url("https://i.postimg.cc/25g6QdQg/nahil-naseer-xljt-GZ2-P3-Y-unsplash.jpg");
-    height: 320px;
-    padding-left:150px;
+  background-image: url("https://i.postimg.cc/25g6QdQg/nahil-naseer-xljt-GZ2-P3-Y-unsplash.jpg");
+  height: 320px;
+  padding-left:150px;
 }
 .fond2{
-    background-image: url("https://i.postimg.cc/3x17rXf2/izuddin-helmi-adnan-8-VJDHw3da-Gk-unsplash.jpg");
-    height: 320px;
-    padding-left:150px;
+  background-image: url("https://i.postimg.cc/3x17rXf2/izuddin-helmi-adnan-8-VJDHw3da-Gk-unsplash.jpg");
+  height: 320px;
+  padding-left:150px;
 }
 
 .fond3{
-    background-image: url("https://i.postimg.cc/wT0H2KmK/maksim-shutov-YZm-Lk-Ug-EI-unsplash.jpg");
-    height: 320px;
-    padding-left:150px;
+  background-image: url("https://i.postimg.cc/wT0H2KmK/maksim-shutov-YZm-Lk-Ug-EI-unsplash.jpg");
+  height: 320px;
+  padding-left:150px;
 }
 
 .LNE_info, .FNE_info, .ZDO_info{
-    display:flex;
-    justify-content:center;
-    font-size: 35px;
-    padding-bottom: 2%;
-    font-style: italic;
-    padding-right: 130px;
-    color:white;
+  display:flex;
+  justify-content:center;
+  font-size: 35px;
+  padding-bottom: 2%;
+  font-style: italic;
+  padding-right: 130px;
+  color:white;
 }
 
 .information{
-    display: flex;
-    height:20vh;
-    flex-direction:row;
+  display: flex;
+  height:20vh;
+  flex-direction:row;
 }
 
 .LNE_gauche{
-    background-color:#31572c;
-    opacity:0.75;
-    border-radius: 15px;
-    display:flex;
-    width:30%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height:110%;
-    font-size:20px;
-    
+  background-color:#31572c;
+  border-radius: 15px;
+  display:flex;
+  width:30%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height:110%;
+  font-size:20px;
+  
 }
 
 .FNE_gauche{
-    background-color:#ad0d27;
-    opacity:0.75;
-    border-radius: 15px;
-    display:block;
-    width:30%;
-    height:100%;
-    font-size:20px;
+  background-color:#ad0d27;
+  border-radius: 15px;
+  display:block;
+  width:30%;
+  height:100%;
+  font-size:20px;
 }
 
 .ZDO_gauche{
-    background-color:#81712b;
-    opacity:0.75;
-    border-radius: 15px;
-    display:flex;
-    width:30%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height:110%;
-    font-size:20px;
-}
-
-.FNE_gauche :hover, .LNE_gauche :hover, .ZDO_gauche :hover{
-    font-size:30px;
+  background-color:#81712b;
+  border-radius: 15px;
+  display:flex;
+  width:30%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height:110%;
+  font-size:20px;
 }
 
 .LNE_text, .LNE_web, .FNE_text, .FNE_web, .ZDO_text, .ZDO_web, .ZDO_fb{
-    padding-top:6px;
-    width:100%;
-    font-size: 20px;
-    color:white;
-    display: flex;
-    justify-content: center;
+  padding-top:6px;
+  width:100%;
+  font-size: 20px;
+  color:white;
+  display: flex;
+  justify-content: center;
 }
 
 .LNE_droite, .FNE_droite, .ZDO_droite{
-    display:flex;
-    width:60%;
-    justify-content:flex-end;
-    align-items:center;
-    height:100%;
+  display:flex;
+  width:60%;
+  justify-content:flex-end;
+  align-items:center;
+  height:100%;
 }
 
 .FNE_logo, .ZDO_logo, .LNE_logo{
-    width:220px;
-    height:120%;
-    border-radius: 50%;
+  width:220px;
+  height:120%;
+  border-radius: 50%;
 }
 
 .LNE_fond, .FNE_fond, .ZDO_fond{
-    background-color:#FAF0E6;
-    height:100%;
-    width:100%;
+  background-color:#FAF0E6;
+  height:100%;
+  width:100%;
 }
 
 .LNE_des, .FNE_des, .ZDO_des{
-    display:flex;
-    justify-content:center;
-    font-size: 35px;
-    padding-bottom: 2%;
-    font-style: italic;
-    padding-top: 3%;
-}
-
-.description :hover{
-    font-size:30px;
+  display:flex;
+  justify-content:center;
+  font-size: 35px;
+  padding-bottom: 2%;
+  font-style: italic;
+  padding-top: 3%;
 }
 
 .description{
-    display: flex;
+  display: flex;
 }
 
 .LNE_text2, .FNE_text2, .ZDO_text2{
-    width:95%;
-    font-size:20px;
-    padding-right:15px;
-    padding-left:2%;
-    padding-bottom:2%;
+  width:95%;
+  font-size:20px;
+  padding-right:15px;
+  padding-left:2%;
+  padding-bottom:2%;
 
 }
 
@@ -214,285 +211,292 @@ text-decoration:none;
 /*----------------------début footer*/
 
 footer{
-    background-color: #555;
-    color: #bbb;
-    line-height:1.5;
-    width:100%;
-    height:35%;
-    }
-    
-    footer a{
-    text-decoration: none;
-    color: #eee;
-    }
-    
-    a:hover{
-    text-decoration:underline;
-    }
-    
-    .partie_footer{
-      display:flex;
-      justify-content:space-around;
-      padding-bottom:20px;
-      border-bottom:2px gray solid;
-    }
-    
-    .texte_debut{
+  background-color: #555;
+  color: #bbb;
+  line-height:1.5;
+  width:100%;
+  height:35%;
+  }
+  
+  footer a{
+  text-decoration: none;
+  color: #eee;
+  }
+  
+  a:hover{
+  text-decoration:underline;
+  }
+  
+  .partie_footer{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom:20px;
+    border-bottom:2px gray solid;
+  }
+  
+  .texte_debut{
+  display:flex;
+  flex-flow:column;
+  }
+  
+  .texte_debut a{
+  padding-top:3xp;
+  font-size:20px;
+  text-decoration:none;
+  }
+  
+  .texte_milieu{
     display:flex;
     flex-flow:column;
-    }
-    
-    .texte_debut a{
-    padding-top:3xp;
-    font-size:20px;
-    text-decoration:none;
-    }
-    
-    .texte_debut a:hover{
-      font-size:30px;
-      transition:all 0.5s;
-    }
-    
-    .texte_milieu{
-      display:flex;
-      flex-flow:column;
-    }
-    
-    .texte_milieu a{
+  }
+  
+  .texte_milieu a{
+  padding-top:3px;
+  font-size:20px;
+  text-decoration:none;
+  }
+  
+  .texte_fin{
+    display:flex;
+    flex-flow:column;
+  }
+  
+  .texte_fin a{
     padding-top:3px;
     font-size:20px;
     text-decoration:none;
-    }
-    
-    .texte_milieu a:hover{
-      font-size:30px;
-      transition:all 0.5s;
-    }
-    
-    .texte_fin{
-      display:flex;
-      flex-flow:column;
-    }
-    
-    .texte_fin a{
-      padding-top:3px;
-      font-size:20px;
-      text-decoration:none;
-    }
-    
-    .texte_fin a:hover{
-      font-size:30px;
-      transition:all 0.5s;
-    }
-    
-    .footer2{
-    display:flex;
-    justify-content:center;
-    padding-top:1,25rem;
-    }
-    
-    .footer2 a{
-    margin:1.5rem;
-    }
-    
-    .footer3{
-    background-color:#333;
-    display:flex;
-    justify-content:space-around;
-    }
-    
-    .footer3 a{
-    margin:0.125rem 0.625rem;
-    font-size:20px;
-    text-decoration:none;
-    }
-    
-    .footer3 a:hover{
-      font-size:26px;
-      transition:all 0.5s;
-    }
-    
-    .titre_formulaire{
+  }
+
+  
+  .footer2{
+  display:flex;
+  justify-content:center;
+  padding-top:1,25rem;
+  }
+  
+  .footer2 a{
+  margin:1.5rem;
+  }
+  
+  .footer3{
+  background-color:#333;
+  display:flex;
+  justify-content:space-around;
+  }
+  
+  .footer3 a{
+  margin:0.125rem 0.625rem;
+  font-size:20px;
+  text-decoration:none;
+  }
+  
+  
+  .titre_formulaire{
+  text-align:center;
+  font-weight:bold;
+  font-size:20px;
+  color:white;
+  }
+
+  .titre_form{
+    padding-right:60px;
     text-align:center;
     font-weight:bold;
     font-size:20px;
     color:white;
-    }
-    
-    .logo{
-    border-radius:50%;
-    height:43px;
-    padding-left:5px;
-    }
-    
-    .logo:hover{
-        transition:all 0.6s;
-        height:80px;
-    }
-    
-    @media screen and (max-width:961px){
-    
-   
+  }
+  
+  
+  
+  .logo{
+  border-radius:50%;
+  height:43px;
+  padding-left:5px;
+  }
+  
+  .logo:hover{
+      transition:all 0.6s;
+      height:80px;
+  }
 
-
+  .copy{
+    margin-top:3px;
+  }
 
 /*-----------------fin footer*/
 /*------------------Mobile Styles */
+
+@media screen and (max-width:1300px){
+.FNE_gauche{
+  height:110%;
+}
+
+}
 @media screen and (max-width: 961px) {
 
 /*-----------------NAV*/
 .logo_eco
 {
-    display: none;
+  display: none;
 }
 
 a:link
 {
-    text-decoration:none;
+  text-decoration:none;
 }
 
-.burger, .close 
+.boutton_accueil{
+padding: 20px;
+color: rgb(218, 218, 218);
+font-size: 22px;
+cursor: pointer;
+font-weight:bold;
+display:block;
+}
+.burger, .close
 {
-    display: block;
+  display: block;
 }
 
 .close
 {
-  position: absolute;
-  top: 0;
-  right: 20px;
+position: absolute;
+top: 0;
+right: 20px;
 }
 
 .links 
 {
-  display: none;
+display: none;
 }
 
 .links:target 
 {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  background-color: #555;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.9;
-  top: 0;
-  padding-top:60px;
-  z-index:7;
+display: flex;
+flex-direction: column;
+position: fixed;
+background-color: #555;
+width: 100vw;
+height: 100vh;
+opacity: 1;
+top: 0;
+padding-top:60px;
+z-index:7;
 }
 
 
 /*-----------------ASSO*/
-    .fond1, .fond2, .fond3
-    {
-        padding-left:50px;
-    }
+  .fond1, .fond2, .fond3
+  {
+      padding-left:50px;
+  }
 
-    .LNE_gauche, .FNE_gauche, .ZDO_gauche
-    {
-        width:300px;
-        height: 200px;
-    }
+  .LNE_gauche, .FNE_gauche, .ZDO_gauche
+  {
+      width:300px;
+      height: 200px;
+  }
 
-    .ZDO_droite
-    {
-        width:50%;
-    }
+  .ZDO_droite
+  {
+      width:50%;
+  }
 
-    .LNE_info, .FNE_info, .ZDO_info
-    {
-        padding-right: 45px;
-    }
-    
-    .description
-    {
-        display: block;
-    }
+  .LNE_info, .FNE_info, .ZDO_info
+  {
+      padding-right: 45px;
+  }
+  
+  .description
+  {
+      display: block;
+  }
 
 
 /*-----------------FOOTER*/
-  footer{
-    height:100%;
-  }
-  
-  .partie_footer{
-    display:flex;
-    flex-direction:column;
-  }
-  
-  .texte_debut{
-    align-items:center;
-    border-bottom:2px #777 solid;
-    padding-bottom:20px;
-  }
-  
-  .texte_milieu{
-    align-items:center;
-    border-bottom:2px #777 solid;
-    padding-bottom:20px;
-  }
-  
-  .texte_fin{
-    align-items:center;
-  }
-  
-  .texte_debut, .texte_milieu, .texte_fin{
-    font-size:20px;
-  }
-  
-  .footer2{
-    border-top:2px #777 solid;
-  }
-  
-  .logo{
-    height:40px;
-  }
-  
-  .footer4{
-    width:95%;
-    height:17%;;
-  }
+footer{
+  height:100%;
+}
 
+.partie_footer{
+  display:flex;
+  flex-direction:column;
+}
+
+.texte_debut{
+  align-items:center;
+  border-bottom:2px #777 solid;
+  padding-bottom:20px;
+}
+
+.texte_milieu{
+  align-items:center;
+  border-bottom:2px #777 solid;
+  padding-bottom:20px;
+}
+
+.texte_fin{
+  align-items:center;
+}
+
+.texte_debut, .texte_milieu, .texte_fin{
+  font-size:20px;
+}
+
+.footer2{
+  border-top:2px #777 solid;
+}
+
+.logo{
+  height:40px;
+}
+
+.footer4{
+  width:95%;
+  height:17%;;
+}
+.titre_form{
+  padding-right:0px;
+}
 }
 
 /*-----------Media annexe*/
 
 @media screen and (max-width: 571px) {
 
-    .information{
-        display:flex;
-        flex-wrap: wrap;
-    }
+  .information{
+      display:flex;
+      flex-wrap: wrap;
+  }
 
-    .FNE_gauche, .ZDO_gauche
-    {
-        width:250px;
-        height: 200px;
-        margin-left: 15px;
-    }
+  .FNE_gauche, .ZDO_gauche
+  {
+      width:250px;
+      height: 200px;
+      margin-left: 15px;
+  }
 
-    .LNE_gauche{
-        margin-left:25px;
-    }
+  .LNE_gauche{
+      margin-left:25px;
+  }
 
-    .FNE_droite, .ZDO_droite {
-        width:75%;
-        padding-top:20%;
-    }
+  .FNE_droite, .ZDO_droite {
+      width:75%;
+      padding-top:20%;
+  }
 
-    .LNE_droite{
-        width:70%;
-        padding-top:15%;
-    }
-    .fond1{
-        height: 550px;
-    }
-    .fond2{
-        height: 550px;
-    }
-    
-    .fond3{
-        height: 550px;
-    }
+  .LNE_droite{
+      width:70%;
+      padding-top:15%;
+  }
+  .fond1{
+      height: 550px;
+  }
+  .fond2{
+      height: 550px;
+  }
+  
+  .fond3{
+      height: 550px;
+  }
 }

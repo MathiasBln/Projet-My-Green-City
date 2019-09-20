@@ -308,20 +308,25 @@ display: none;
 
 
 .titreconseils {
-  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   color: #73be31;
-  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
-  font-size: 34px;
+  font-size: 3em;
   text-align: center;
+  margin: 0;
 }
 
 .titregestiondesdechets{
-
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   color: #73be31;
-  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   font-size: 4em;
   text-align: center;
   padding-top: 30px;
+  margin: 0;
+  
 }
 
 
@@ -370,17 +375,21 @@ display: none;
   justify-content: space-around;
   align-items: center;
    margin-bottom: 100px;
-   padding-top: 20px;
-   padding-bottom: 20px;
+   padding-top: 60px;
+   padding-bottom: 60px;
    
 }
 
 .titrecollecte {
-  padding-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   color: #73be31;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
-  font-size: 34px;
+  font-size: 3em;
   text-align: center;
+  margin: 0;
+  padding-top: 30px;
 }
 
 
@@ -426,17 +435,16 @@ details[open] summary {
   
 }
 
-.pointsdecollecte {
-  padding-top: 40px;
-}
-
 .imagecentre {
   display: flex;
+  justify-content: center;
   width: 40%;
   height: 20%;
 }
               
 .imgcentre{
+  width: 430px;
+  height: 400px;
   border-radius: 50%;
   border: 10px solid whitesmoke;
 }

@@ -189,18 +189,17 @@ display: none;
   justify-content: center;
   margin: 0px;
   height: 130px;
-  padding-bottom: 30px;
   text-align: center;
   font-size: 4em;
   background-color: white;
   color: #73be31;
-  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   }
   
   .actions {
   background-image: url("https://i.postimg.cc/jdmfRLpK/jez-timms-l8xc8t-XJ8-E-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -225,19 +224,18 @@ display: none;
   align-items: flex-end;
   justify-content: center;
   margin: 0px;
-  height: 160px;
-  padding-bottom: 30px;
+  height: 130px;
   text-align: center;
   font-size: 4em;
   background-color: white;
   color: #73be31;
-  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   }
   
   .assos {
   background-image: url("https://i.postimg.cc/jdmfRLpK/jez-timms-l8xc8t-XJ8-E-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -270,8 +268,8 @@ display: none;
   @media (max-width:1126px) and (min-width: 626px) {
   
     .title-actions, .title-assos {
-      font-size: 2.5em;
-      height: 140px;
+      font-size: 3em;
+      height: 100px;
     }
     
     .actions, .assos {
@@ -319,7 +317,8 @@ display: none;
       }
   
       .title-actions, .title-assos {
-        font-size: 2.2em;
+        font-size: 2.6em;
+        height: 80px;
         margin: 0px;
       }
   

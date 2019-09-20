@@ -132,6 +132,7 @@ display: none;
   {
   color: #000;
   background-color: #D3D3D3;
+  text-decoration: none;
   }
   
   .burger, .close 
@@ -164,10 +165,13 @@ display: none;
     top: 0;
     padding-top: 60px;
   }
-  
 }
 
 /*----Partie Actions et Associations----*/
+
+#actions{
+  margin:-80px;
+}
 
 .actions img, .assos img {
   width: 300px;
@@ -256,6 +260,10 @@ display: none;
   }
   
   @media (min-width:1126px) {
+
+  #actions{
+  margin:-80px;
+  }
   
   .actions div, .assos div {
     display: flex;
@@ -269,6 +277,9 @@ display: none;
   
   @media (max-width:1126px) and (min-width: 626px) {
   
+    #actions{
+    margin:-80px;
+    }
     .title-actions, .title-assos {
       font-size: 3em;
       height: 100px;
@@ -314,6 +325,9 @@ display: none;
   
   @media (max-width: 626px) {
   
+      #actions{
+      margin:-80px;
+      }
       .actions img, .assos img {
           margin :0px;
       }
@@ -344,7 +358,9 @@ display: none;
 /*Partie gestion des déchets*/
 
 
-
+#dechets{
+  margin:-100px;
+}
 
 .titreconseils {
   display: flex;
@@ -413,9 +429,7 @@ display: none;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-   margin-bottom: 100px;
    padding-top: 60px;
-   padding-bottom: 60px;
    
 }
 
@@ -478,6 +492,7 @@ details[open] summary {
   justify-content: center;
   width: 40%;
   height: 20%;
+  margin-bottom: 50px;
 }
               
 .imgcentre{
@@ -513,11 +528,15 @@ details[open] summary {
     display: flex;
   justify-content: center; 
     width: 90%;
+    margin-bottom: 50px;
   }
 }
 
 /*Footer - Lionel*/
 
+#contact{
+  margin:-80px;
+}
 
 .contact{
   display: flex;
@@ -528,6 +547,7 @@ details[open] summary {
   font-size: 4em;
   color: #73be31;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+  margin-top: 30px;
   }
   
   form{
@@ -605,7 +625,7 @@ details[open] summary {
   }
   
   .texte_debut a{
-  padding-top:3xp;
+  padding-top:3px;
   font-size:20px;
   text-decoration:none;
   }
@@ -636,7 +656,7 @@ details[open] summary {
   .footer2{
   display:flex;
   justify-content:center;
-  padding-top:1,25rem;
+  padding-top:1.25rem;
   }
   
   .footer2 a{

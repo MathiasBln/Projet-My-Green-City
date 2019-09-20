@@ -34,6 +34,8 @@ html {
   height: 70px;
   position: fixed;
   top: 0; 
+  opacity: 0.9;
+  z-index: 10;
 }
 
 .navbar a
@@ -89,20 +91,16 @@ text-decoration:none;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  text-align: center;
   height: 500px;
   font-weight: bold;
   font-style: italic;
-  color: green;
-  font-size: 4em;
+  color: #73be31;
+  font-size: 6em;
+  margin: 0;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
 }
 
-h1
-{
-  margin: 0;
-  font-weight: bold;
-  font-style: italic;
-}
 
 /* Mobile Styles */
 @media screen and (max-width: 961px) {
@@ -111,12 +109,24 @@ h1
 display: none;
 }
 
-
-
   a:link
   {
   text-decoration:none;
   }
+
+.carousel h1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  font-weight: bold;
+  font-style: italic;
+  color: #73be31;
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
+}
 
   .burger:hover
   {
@@ -178,7 +188,7 @@ display: none;
   align-items: flex-end;
   justify-content: center;
   margin: 0px;
-  height: 160px;
+  height: 130px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 4em;
@@ -262,7 +272,7 @@ display: none;
   @media (max-width:1126px) and (min-width: 626px) {
   
     .title-actions, .title-assos {
-      font-size: 3em;
+      font-size: 2.5em;
       height: 140px;
     }
     
@@ -311,7 +321,7 @@ display: none;
       }
   
       .title-actions, .title-assos {
-        font-size: 3em;
+        font-size: 2.2em;
         margin: 0px;
       }
   

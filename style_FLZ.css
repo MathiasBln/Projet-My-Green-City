@@ -17,17 +17,16 @@
 }
 
 /*----------------------début nav */
-
 .navbar
 {
-  background-color: #808080;
+  background-color: #555;
   display: flex;
   align-items: center;
   width: 100vw;
   height: 70px;
 }
 
-.navbar a
+.boutton, .close, .burger
 {
   padding: 20px;
   color: rgb(218, 218, 218);
@@ -125,18 +124,16 @@ text-decoration:none;
     justify-content: center;
     height:110%;
     font-size:20px;
+    
 }
 
 .FNE_gauche{
     background-color:#ad0d27;
     opacity:0.75;
     border-radius: 15px;
-    display:flex;
+    display:block;
     width:30%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height:120%;
+    height:100%;
     font-size:20px;
 }
 
@@ -151,6 +148,10 @@ text-decoration:none;
     justify-content: center;
     height:110%;
     font-size:20px;
+}
+
+.FNE_gauche :hover, .LNE_gauche :hover, .ZDO_gauche :hover{
+    font-size:30px;
 }
 
 .LNE_text, .LNE_web, .FNE_text, .FNE_web, .ZDO_text, .ZDO_web, .ZDO_fb{
@@ -191,6 +192,10 @@ text-decoration:none;
     padding-top: 3%;
 }
 
+.description :hover{
+    font-size:30px;
+}
+
 .description{
     display: flex;
 }
@@ -209,64 +214,125 @@ text-decoration:none;
 /*----------------------début footer*/
 
 footer{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    background-color:#A9A9A9;
-    height:20vh;
-}
-
-footer div{
-    display:flex;
-    flex-direction:column;
-}
-
-.footer1{
-    align-items:flex-start;
-    flex-wrap:wrap;
-    margin-top:15px;
-    width:90%;
-    height:13vh;
-}
-
-.footer1 a{
-    color:white;
-    text-decoration:none;
-}
-
-.footer1 a:hover{
-    text-decoration:underline;
-}
-
-.footer2{
-    display:flex;
-    flex-direction:row;
-    align-items:flex-end;
-    justify-content:space-around;
-    align-content:center;
+    background-color: #555;
+    color: #bbb;
+    line-height:1.5;
     width:100%;
-    margin-top:15px;
-}
-
-.footer2 a{
-    color:white;
-    text-decoration:none;
-}
-
-.footer2 a:hover{
+    height:35%;
+    }
+    
+    footer a{
+    text-decoration: none;
+    color: #eee;
+    }
+    
+    a:hover{
     text-decoration:underline;
-}
-
-h3{
+    }
+    
+    .partie_footer{
+      display:flex;
+      justify-content:space-around;
+      padding-bottom:20px;
+      border-bottom:2px gray solid;
+    }
+    
+    .texte_debut{
+    display:flex;
+    flex-flow:column;
+    }
+    
+    .texte_debut a{
+    padding-top:3xp;
+    font-size:20px;
+    text-decoration:none;
+    }
+    
+    .texte_debut a:hover{
+      font-size:30px;
+      transition:all 0.5s;
+    }
+    
+    .texte_milieu{
+      display:flex;
+      flex-flow:column;
+    }
+    
+    .texte_milieu a{
+    padding-top:3px;
+    font-size:20px;
+    text-decoration:none;
+    }
+    
+    .texte_milieu a:hover{
+      font-size:30px;
+      transition:all 0.5s;
+    }
+    
+    .texte_fin{
+      display:flex;
+      flex-flow:column;
+    }
+    
+    .texte_fin a{
+      padding-top:3px;
+      font-size:20px;
+      text-decoration:none;
+    }
+    
+    .texte_fin a:hover{
+      font-size:30px;
+      transition:all 0.5s;
+    }
+    
+    .footer2{
+    display:flex;
+    justify-content:center;
+    padding-top:1,25rem;
+    }
+    
+    .footer2 a{
+    margin:1.5rem;
+    }
+    
+    .footer3{
+    background-color:#333;
+    display:flex;
+    justify-content:space-around;
+    }
+    
+    .footer3 a{
+    margin:0.125rem 0.625rem;
+    font-size:20px;
+    text-decoration:none;
+    }
+    
+    .footer3 a:hover{
+      font-size:26px;
+      transition:all 0.5s;
+    }
+    
+    .titre_formulaire{
     text-align:center;
-}
-
-.logo{   
-    padding-bottom: 50%;
+    font-weight:bold;
+    font-size:20px;
+    color:white;
+    }
+    
+    .logo{
     border-radius:50%;
-    height:40px;
- 
-}
+    height:43px;
+    padding-left:5px;
+    }
+    
+    .logo:hover{
+        transition:all 0.6s;
+        height:80px;
+    }
+    
+    @media screen and (max-width:961px){
+    
+   
 
 
 
@@ -275,45 +341,47 @@ h3{
 @media screen and (max-width: 961px) {
 
 /*-----------------NAV*/
-    .logo_eco
-    {
-        display: none;
-    }
-    
-    a:link
-    {
-        text-decoration:none;
-    }
-    
-    .burger, .close 
-    {
-        display: block;
-    }
-    
-    .close
-    {
-      position: absolute;
-      top: 0;
-      right: 20px;
-    }
+.logo_eco
+{
+    display: none;
+}
 
-    .links 
-    {
-      display: none;
-    }
-    
-    .links:target 
-    {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      background-color: rgb(59, 59, 58);
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      padding-top:100px;
-      z-index:7;
-    }
+a:link
+{
+    text-decoration:none;
+}
+
+.burger, .close 
+{
+    display: block;
+}
+
+.close
+{
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.links 
+{
+  display: none;
+}
+
+.links:target 
+{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #555;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.9;
+  top: 0;
+  padding-top:60px;
+  z-index:7;
+}
+
 
 /*-----------------ASSO*/
     .fond1, .fond2, .fond3
@@ -324,7 +392,7 @@ h3{
     .LNE_gauche, .FNE_gauche, .ZDO_gauche
     {
         width:300px;
-        height: 220px;
+        height: 200px;
     }
 
     .ZDO_droite
@@ -344,9 +412,87 @@ h3{
 
 
 /*-----------------FOOTER*/
-    .logo
-    {   
+  footer{
+    height:100%;
+  }
+  
+  .partie_footer{
     display:flex;
+    flex-direction:column;
+  }
+  
+  .texte_debut{
+    align-items:center;
+    border-bottom:2px #777 solid;
+    padding-bottom:20px;
+  }
+  
+  .texte_milieu{
+    align-items:center;
+    border-bottom:2px #777 solid;
+    padding-bottom:20px;
+  }
+  
+  .texte_fin{
+    align-items:center;
+  }
+  
+  .texte_debut, .texte_milieu, .texte_fin{
+    font-size:20px;
+  }
+  
+  .footer2{
+    border-top:2px #777 solid;
+  }
+  
+  .logo{
+    height:40px;
+  }
+  
+  .footer4{
+    width:95%;
+    height:17%;;
+  }
+
+}
+
+/*-----------Media annexe*/
+
+@media screen and (max-width: 571px) {
+
+    .information{
+        display:flex;
+        flex-wrap: wrap;
     }
 
+    .FNE_gauche, .ZDO_gauche
+    {
+        width:250px;
+        height: 200px;
+        margin-left: 15px;
+    }
+
+    .LNE_gauche{
+        margin-left:25px;
+    }
+
+    .FNE_droite, .ZDO_droite {
+        width:75%;
+        padding-top:20%;
+    }
+
+    .LNE_droite{
+        width:70%;
+        padding-top:15%;
+    }
+    .fond1{
+        height: 550px;
+    }
+    .fond2{
+        height: 550px;
+    }
+    
+    .fond3{
+        height: 550px;
+    }
 }

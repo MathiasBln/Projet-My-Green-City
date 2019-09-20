@@ -76,7 +76,7 @@ text-decoration:none;
 
 .carousel
 {
-  background-color: var(--mainColor);
+  background-color: var(-mainColor);
   background-image: radial-gradient(white 8%,transparent 70%),url(https://picsum.photos/1000/300);
   background-position: center;
   background-size: cover;
@@ -248,13 +248,14 @@ display: none;
   }
   
   @media (min-width:1126px) {
+  
   .actions div, .assos div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 30px 0px 30px 0px;
     padding: 0px;
-  }
+    }
   }
   
   
@@ -278,10 +279,11 @@ display: none;
     .actions h2, .assos h2 {
       width: 35%;
       font-size: 1.5em;
+      margin: 30px;
     }
     
     .actions div, .assos div {
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
     }
@@ -300,6 +302,34 @@ display: none;
       display:flex;
       flex-direction: row;
     }
+  }
+  
+  @media (max-width: 626px) {
+  
+      .actions img, .assos img {
+          margin :0px;
+      }
+  
+      .title-actions, .title-assos {
+        font-size: 3em;
+        margin: 0px;
+      }
+  
+      .actions div {
+        margin: 30px 0px 30px 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .assos div {
+        margin: 30px 0px 30px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+  
+  
   }
 
 /*Partie gestion des déchets*/

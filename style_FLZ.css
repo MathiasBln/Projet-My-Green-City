@@ -240,7 +240,7 @@ footer{
   }
   
   .texte_debut a{
-  padding-top:3xp;
+  padding-top:3px;
   font-size:20px;
   text-decoration:none;
   }
@@ -271,7 +271,7 @@ footer{
   .footer2{
   display:flex;
   justify-content:center;
-  padding-top:1,25rem;
+  padding-top:1.25rem;
   }
   
   .footer2 a{

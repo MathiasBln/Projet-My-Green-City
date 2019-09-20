@@ -217,8 +217,10 @@ display: none;
   text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   }
   
+  hr {
+    display: none;
+  }
 
-  
   .title-assos {
   display: flex;
   align-items: flex-end;
@@ -422,7 +424,6 @@ display: none;
   align-items: flex-end;
   justify-content: center;
   color: #73be31;
-  text-shadow: 4px 0.4px 6px rgba(31, 35, 35, 0.25);
   font-size: 3em;
   text-align: center;
   margin: 0;
@@ -490,6 +491,9 @@ details[open] summary {
 
 
 @media only screen and (max-width: 961px){
+  .titregestiondesdechets {
+    font-size: 3em;
+  }
 
 
   .conteneur {
